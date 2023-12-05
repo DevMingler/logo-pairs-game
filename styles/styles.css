@@ -37,6 +37,10 @@
     opacity: 0;
 }
 
+.logo-guess-image-visible{
+    opacity: 100%;
+}
+
 input{
     max-width: -webkit-fill-available;
 }
