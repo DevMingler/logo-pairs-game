@@ -23,10 +23,18 @@
     display: flex;
 }
 
+.logo-guess-image-container:hover{
+    cursor: pointer;
+}
+
 /* Each quiz item: image, input and containter */
 .logo-guess-image{
     width: 50%;
     margin: auto;
+}
+
+.logo-guess-image-hidden{
+    opacity: 0;
 }
 
 input{
