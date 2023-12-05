@@ -172,8 +172,45 @@
     </div>
 
     <script>
-        function revealLogo(logoName){
-            document.getElementById(logoName).classList.add("logo-guess-image-visible");
+        // Only 2 logos can be visible at a time.
+        // This excludes visible logos that are successfully paired up.
+        var countVisibleLogos = 0;
+        var logoOne, logoTwo;
+
+        function revealLogo(logoName){            
+            if(countVisibleLogos == 0){
+                document.getElementById(logoName).classList.add("logo-guess-image-visible");
+                countVisibleLogos++;
+                logoOne = logoName;
+            }
+            else if(countVisibleLogos == 1){
+                document.getElementById(logoName).classList.add("logo-guess-image-visible");
+                countVisibleLogos++;
+                logoTwo = logoName;
+                validateOpenPair();
+            }
+            else{
+                // Do nothing.
+            }
+        }
+
+        function validateOpenPair(){
+            var logoOneClean = logoOne.toLowerCase().replace("-1", "");
+            var logoTwoClean = logoTwo.toLowerCase().replace("-2", "");
+
+            if(logoOneClean == logoTwoClean){
+                // Reset counter.
+                countVisibleLogos = 0;
+            } 
+            else{
+                // Reset counter.
+                countVisibleLogos = 0;
+                setTimeout(function() {
+                    // Hide logos.
+                    document.getElementById(logoOne).classList.remove("logo-guess-image-visible");
+                    document.getElementById(logoTwo).classList.remove("logo-guess-image-visible");
+                }, 200);
+            }
         }
 
     </script>
