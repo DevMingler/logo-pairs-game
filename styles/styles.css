@@ -1,0 +1,33 @@
+/* Body */
+#page-body{
+    min-height: 100%;
+    background-size: cover;
+    background-image: url("../images/devmingler-bliss-background.jpeg");
+}
+
+/* General */
+.page-font{
+    font-family: "Raleway", sans-serif
+}
+
+.w3-hover-opacity{
+    cursor: pointer;
+}
+
+/* Each quiz item: image, input and containter */
+.logo-guess-image{
+    width: 50%;
+}
+
+input{
+    max-width: -webkit-fill-available;
+}
+
+.winner-input{
+    background-color: #60F08A;
+    border: none;
+}
+
+.logo-guess-container{
+    text-align: center;
+}
