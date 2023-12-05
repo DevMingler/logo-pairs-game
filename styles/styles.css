@@ -14,9 +14,19 @@
     cursor: pointer;
 }
 
+.w3-row{
+    display: flex;
+}
+
+.logo-guess-image-container{
+    height: 100%;
+    display: flex;
+}
+
 /* Each quiz item: image, input and containter */
 .logo-guess-image{
     width: 50%;
+    margin: auto;
 }
 
 input{
@@ -30,4 +40,7 @@ input{
 
 .logo-guess-container{
     text-align: center;
+    background-color: #60F08A;
+    border: 1px black solid;    
+    margin: 10px;
 }
