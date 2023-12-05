@@ -15,7 +15,7 @@ A dynamic order of hidden logos will appear on the grid.
 ## Level 3  
 A dynamic order of hidden logos will appear on the grid.  
 During this round, users will compete against a timer.  
-If the timer runs out, all uncovered logos will be hidden and the user can begin again with pairing.  
+If the timer runs out, the game is over.  
   
   
 ## Level 4  
